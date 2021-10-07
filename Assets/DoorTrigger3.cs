@@ -2,17 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DoorTrigger : MonoBehaviour
+public class DoorTrigger3 : MonoBehaviour
 {
     public BoxCollider2D boxCollider;
     public GameObject Door;
-    Vector3 newPos = new Vector3(19f, 1.180f, 0f);
-    
+    Vector3 newPos = new Vector3(70f, 10f, 0f);
+
     private void Awake()
     {
         boxCollider = GetComponent<BoxCollider2D>();
         boxCollider.isTrigger = true;
-        
+
     }
 
     // Update is called once per frame
@@ -20,7 +20,7 @@ public class DoorTrigger : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("The player has opened the door", gameObject);
+            Debug.Log("The player has opened the door3", gameObject);
             Door.transform.position = newPos;
         }
     }
