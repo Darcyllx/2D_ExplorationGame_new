@@ -3740,7 +3740,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Could you help me find the fish?
 
-    You can eat it if you can find it. '
+    You can eat it!'
 --- !u!222 &231427182
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10833,11 +10833,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 5f1928571abb84ec299b0d0e3ea1c968, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a2a5a556b7d1346a38a73fc14c47833b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.723
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -14833,7 +14833,14 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Where is my toy boat???
+  m_Text: 'Where is my toy boat???
+
+    It has been with me for years.
+
+    I heard
+    my father is coughing.
+
+    Could you also help me to check it out?'
 --- !u!222 &918615143
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16053,10 +16060,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Sorry for the rude requests from my children. Anway, thank you so much
-    for all your help!
-
-'
+  m_Text: "Sorry for the rude requests from my children. \nAnway, thank you so much
+    for all your help!\n"
 --- !u!222 &1031472202
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -23683,7 +23688,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Where is my key???
+  m_Text: 'Where is my key???
+
+    That key can open the door to the maze!'
 --- !u!222 &1389327540
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -28445,7 +28452,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.011296481, y: 0.029777765}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -28456,7 +28463,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.5425913, y: 1.4169168}
   m_EdgeRadius: 0
 --- !u!212 &1646591885
 SpriteRenderer:
@@ -30160,7 +30167,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.0050507486, y: 0.005048357}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -30171,7 +30178,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.26, y: 0.32}
+  m_Size: {x: 0.29029799, y: 0.34625828}
   m_EdgeRadius: 0
 --- !u!50 &1748069929
 Rigidbody2D:
@@ -33238,7 +33245,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Where is my apple???
+  m_Text: 'Where is my apple???
+
+    I just picked it and stolen by several "hearts".
+
+    Be
+    careful!'
 --- !u!222 &1890156397
 CanvasRenderer:
   m_ObjectHideFlags: 0
