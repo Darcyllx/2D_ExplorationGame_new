@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TextTrigger5 : MonoBehaviour
 {
@@ -29,5 +30,6 @@ public class TextTrigger5 : MonoBehaviour
         yield return new WaitForSeconds(5);
         Destroy(uiObject);
         Destroy(gameObject);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
