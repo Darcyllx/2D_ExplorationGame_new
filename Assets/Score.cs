@@ -13,6 +13,7 @@ public class Score : MonoBehaviour
         collectSound.Play();
         theScore += 10;
         scoreText.GetComponent<Text>().text = "SCORE: " + theScore;
-        Destroy(gameObject);
+        //Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 }
