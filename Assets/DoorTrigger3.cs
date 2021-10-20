@@ -6,6 +6,8 @@ public class DoorTrigger3 : MonoBehaviour
 {
     public BoxCollider2D boxCollider;
     public GameObject Door;
+    public TextTrigger3 tt3;
+
     Vector3 newPos = new Vector3(70f, 10f, 0f);
 
     private void Awake()
@@ -22,6 +24,7 @@ public class DoorTrigger3 : MonoBehaviour
         {
             Debug.Log("The player has opened the door3", gameObject);
             Door.transform.position = newPos;
+            tt3.hasMet3 = true;
         }
     }
 }
