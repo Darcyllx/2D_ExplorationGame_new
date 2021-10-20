@@ -14,7 +14,7 @@ public class KeyRandom : MonoBehaviour
         PickPoints();
     }
 
-    // Update is called once per frame
+    // Updatse is called once per frame
     void PickPoints()
     {
         int indexNumber = Random.Range(0, points.Length);

@@ -34,7 +34,7 @@ public class TextTrigger2 : MonoBehaviour
 
             //fishObject.SetActive(true);
             StartCoroutine("WaitForSec");
-            Debug.Log("Message1 is shown");
+            Debug.Log("Message2 is shown");
         }
     }
     IEnumerator WaitForSec()
