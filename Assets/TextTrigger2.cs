@@ -9,6 +9,7 @@ public class TextTrigger2 : MonoBehaviour
     public GameObject keyObject;
     public AudioSource npcSound1;
     public AudioSource npcSound2;
+    public AudioSource doorSound;
 
     public bool hasMet2;
 
@@ -38,6 +39,7 @@ public class TextTrigger2 : MonoBehaviour
                 npcSound2.Play();
                 Debug.Log("hasMet2 is true");
                 Door.transform.position = newPos;
+                doorSound.Play();
             }
 
             //fishObject.SetActive(true);

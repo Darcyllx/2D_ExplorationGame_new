@@ -10,6 +10,7 @@ public class TextTrigger : MonoBehaviour
     public GameObject fishObject;
     public AudioSource npcSound1;
     public AudioSource npcSound2;
+    public AudioSource doorSound;
 
     public bool hasMet1;
 
@@ -48,6 +49,8 @@ public class TextTrigger : MonoBehaviour
                 Debug.Log("hasMet1 is true");
                 npcSound2.Play();
                 Door.transform.position = newPos;
+                doorSound.Play();
+
             }
 
             //fishObject.SetActive(true);

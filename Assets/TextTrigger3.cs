@@ -9,6 +9,7 @@ public class TextTrigger3 : MonoBehaviour
     public GameObject appleObject;
     public AudioSource npcSound1;
     public AudioSource npcSound2;
+    public AudioSource doorSound;
     public bool hasMet3;
 
     public GameObject Door;
@@ -38,6 +39,7 @@ public class TextTrigger3 : MonoBehaviour
                 Debug.Log("hasMet3 is true");
                 npcSound2.Play();
                 Door.transform.position = newPos;
+                doorSound.Play();
             }
 
             StartCoroutine("WaitForSec");
