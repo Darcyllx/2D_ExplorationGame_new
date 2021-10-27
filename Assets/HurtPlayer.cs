@@ -8,6 +8,7 @@ public class HurtPlayer : MonoBehaviour
     private HealthManager healthMan;
     public float waitToHurt = 1f;
     public bool isTouching;
+    public AudioSource hurtSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -61,6 +62,7 @@ public class HurtPlayer : MonoBehaviour
         {
             isTouching = false;
             waitToHurt = 2f;
+            hurtSound.Play();
         }
     }
 }

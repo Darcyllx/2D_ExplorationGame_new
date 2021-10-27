@@ -7,6 +7,8 @@ public class HealthManager : MonoBehaviour
 {
     public int currentHealth;
     public int maxHealth;
+    public AudioSource deathSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,8 +25,10 @@ public class HealthManager : MonoBehaviour
         currentHealth -= damageToGive;
         if(currentHealth <= 0)
         {
+            deathSound.Play();
             gameObject.SetActive(false);
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            
         }
     }
 

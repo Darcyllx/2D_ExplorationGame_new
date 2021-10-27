@@ -6,8 +6,15 @@ public class TextTrigger : MonoBehaviour
 {
     public GameObject uiObject;
     public GameObject uiObject2;
+    //public GameObject textbox;
     public GameObject fishObject;
+    public AudioSource npcSound1;
+    public AudioSource npcSound2;
+
     public bool hasMet1;
+
+    public GameObject Door;
+    Vector3 newPos = new Vector3(19f, 1.180f, 0f);
     //public GameObject squareObject;
 
 
@@ -16,6 +23,7 @@ public class TextTrigger : MonoBehaviour
     {
         uiObject.SetActive(false);
         uiObject2.SetActive(false);
+        //textbox.SetActive(false);
         fishObject.SetActive(false);
         //hasMet1 = false;
         //squareObject.SetActive(false);
@@ -28,13 +36,18 @@ public class TextTrigger : MonoBehaviour
             if(hasMet1 == false)
             {
                 uiObject.SetActive(true);
+                //textbox.SetActive(true);
                 fishObject.SetActive(true);
                 Debug.Log("hasMet1 is false");
+                npcSound1.Play();
             }
             else
             {
                 uiObject2.SetActive(true);
+                //textbox.SetActive(true);
                 Debug.Log("hasMet1 is true");
+                npcSound2.Play();
+                Door.transform.position = newPos;
             }
 
             //fishObject.SetActive(true);
@@ -44,9 +57,10 @@ public class TextTrigger : MonoBehaviour
     }
     IEnumerator WaitForSec()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(2);
         uiObject.SetActive(false);
         uiObject2.SetActive(false);
+        //textbox.SetActive(false);
         //Destroy(uiObject);
         //Destroy(uiObject2);
 

@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class TextTrigger5 : MonoBehaviour
 {
     public GameObject uiObject;
+    public AudioSource npcSound1;
     //public GameObject boatObject;
 
 
@@ -23,11 +24,12 @@ public class TextTrigger5 : MonoBehaviour
             //boatObject.SetActive(true);
             StartCoroutine("WaitForSec");
             Debug.Log("Message is shown");
+            npcSound1.Play();
         }
     }
     IEnumerator WaitForSec()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(3);
         Destroy(uiObject);
         Destroy(gameObject);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);

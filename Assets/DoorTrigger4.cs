@@ -5,10 +5,10 @@ using UnityEngine;
 public class DoorTrigger4 : MonoBehaviour
 {
     public BoxCollider2D boxCollider;
-    public GameObject Door;
+    //public GameObject Door;
     public TextTrigger4 tt4;
 
-    Vector3 newPos = new Vector3(70f, 10f, 0f);
+    //Vector3 newPos = new Vector3(70f, 10f, 0f);
 
     private void Awake()
     {
@@ -23,7 +23,7 @@ public class DoorTrigger4 : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             Debug.Log("The player has opened the door4", gameObject);
-            Door.transform.position = newPos;
+            //Door.transform.position = newPos;
             tt4.hasMet4 = true;
         }
     }

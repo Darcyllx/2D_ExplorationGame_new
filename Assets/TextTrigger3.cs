@@ -7,8 +7,12 @@ public class TextTrigger3 : MonoBehaviour
     public GameObject uiObject;
     public GameObject uiObject2;
     public GameObject appleObject;
+    public AudioSource npcSound1;
+    public AudioSource npcSound2;
     public bool hasMet3;
 
+    public GameObject Door;
+    Vector3 newPos = new Vector3(73.2f, -16f, 0f);
 
     // Start is called before the first frame update
     void Start()
@@ -26,11 +30,14 @@ public class TextTrigger3 : MonoBehaviour
                 uiObject.SetActive(true);
                 appleObject.SetActive(true);
                 Debug.Log("hasMet3 is false");
+                npcSound1.Play();
             }
             else
             {
                 uiObject2.SetActive(true);
                 Debug.Log("hasMet3 is true");
+                npcSound2.Play();
+                Door.transform.position = newPos;
             }
 
             StartCoroutine("WaitForSec");
@@ -39,7 +46,7 @@ public class TextTrigger3 : MonoBehaviour
     }
     IEnumerator WaitForSec()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(3);
         uiObject.SetActive(false);
         uiObject2.SetActive(false);
     }
